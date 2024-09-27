@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style/main.css">
+    <script src="script/questions.js"></script>
+</head>
+<body>
+    <div class="fancy-info-box">
+        <div class="info-box-icon">
+          <i class="fas fa-trophy"><img src="images/flag.png"/></i>
+        </div>
+        <div class="info-box-content">
+          <h3 class="info-box-title">Explore Our Home Land With These Quizzes!</h3>
+          <p class="info-box-description">Expand your knowledge of geography and culture with our short quizzes, all based on photos.</p>
+          <span class="info-box-value"></span>
+        </div>
+      </div>
+    <div class="quiz-container">
+               <div id="userForm" class="hide_">
+                <label for="name">Name<span class="mandatory">*</span>:</label>
+                <input type="text" id="sname" name="name"><br><br>
+        
+                <label for="grade">Grade<span class="mandatory">*</span>:</label>
+                <select id="sgrade" name="grade">
+                    <option value="">Select Grade</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select><br><br>
+                <label for="name">Student ID:</label>
+                <input type="text" id="sid" name="sid"><br><br>
+        
+                <button id="startQuiz" onclick="StartQuiz();">Start Quiz</button>  
+            </div>          
+        <div class="quiz hide">
+            <div class="question-container">
+
+            </div>
+            <button id="submit-btn" onclick="SubmitAndNext();">Submit & Next</button>
+            <div id="result" class="hidden">
+                <h2>Your Score: <span id="score"></span></h2>
+            </div>
+    </div>
+    </div>
+    <script src="script/main.js"></script>
+
+</body>
+</html>
