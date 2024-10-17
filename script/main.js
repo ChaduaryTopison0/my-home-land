@@ -9,17 +9,19 @@ const sNameElement = document.getElementById('sname');
 const sGradeElement = document.getElementById('sgrade');
 const startQuizElement = document.getElementById('startQuiz');
 let currentQuestion = 0 ;
+let askedQuestion = [] ;
+
+
 let showWelcome = (title, description, value) => {
     document.querySelector('.info-box-title').innerHTML = title ;
     document.querySelector('.info-box-description').innerHTML = description ;    
     document.querySelector('.info-box-value').innerHTML = value ;        
 
 }
-
-
 let getRandomQuestionNumber = () => {
-    totalQuestions = 2 ;
+    totalQuestions = 4 ;
     let rqn = Math.floor((Math.random() * totalQuestions) + 1);
+    askedQuestion.push(rqn);
     currentQuestion++ ;
     document.querySelector('.info-box-description').innerHTML = currentQuestion + ' out of ' + 10 ;  
     return ('0000'+rqn).slice(-4);  
