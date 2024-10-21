@@ -118,6 +118,11 @@ body{
   
   .info-box-content {
     margin-left: 20px;
+    width:450px;
+  }
+
+  .info-box-complete{
+    margin-left:200px;
   }
   
   .info-box-title {

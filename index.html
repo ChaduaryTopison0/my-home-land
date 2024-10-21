@@ -17,6 +17,10 @@
           <p class="info-box-description">Expand your knowledge of geography and culture with our short quizzes, all based on photos.</p>
           <span class="info-box-value"></span>
         </div>
+        <div class="info-box-complete hide">
+          <h3 class="info-box-title">Total Marks: 10</h3>
+          <h3 class="info-box-title">Marks Obtained: <span id='marksObtained'></span></h3>
+        </div>        
       </div>
     <div class="quiz-container">
                <div id="userForm" class="hide_">
@@ -46,8 +50,8 @@
             </div>          
         <div class="quiz hide">
             <div class="question-container">
-
             </div>
+            <h4 id="emessage" style="color: red;"></h4>
             <button id="submit-btn" onclick="SubmitAndNext();">Submit & Next</button>
             <div id="result" class="hidden">
                 <h2>Your Score: <span id="score"></span></h2>
